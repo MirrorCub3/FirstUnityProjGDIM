@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float speed = 5f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 20f;
+    [SerializeField] private float floatForce = 6f;
+    [SerializeField] private bool isJumping = false;
     private float xtrans;
-    public float jumpForce = 20f;
-    public float floatForce = 6f;
-    public bool isJumping = false;
 
-    public Rigidbody2D myRigidbody;
-    public Animator anim;
-    public bool wings;
+    [SerializeField] private Rigidbody2D myRigidbody;
+    [SerializeField] private Animator anim;
 
+    private bool wings;
     private bool faceRight;
 
     void Start()

@@ -12,15 +12,15 @@ public class GeneralScript : MonoBehaviour
     public static float right;
 
     // so we can manually set outside of code
-    public float absoluteLeft = -10; 
-    public float absoluteRight = 10;
-    public float absoluteTop = 10;
-    public float absoluteBottom = -10;
+    [SerializeField]private float absoluteLeft = -10;
+    [SerializeField] private float absoluteRight = 10;
+    [SerializeField] private float absoluteTop = 10;
+    [SerializeField] private float absoluteBottom = -10;
 
     public static bool gameEnd;
     public static GameObject Player; // pointer to player all code can access
     public GameObject collideTiles;
-    public string nextScene;
+    [SerializeField] private string nextScene;
 
     void Start()
     {

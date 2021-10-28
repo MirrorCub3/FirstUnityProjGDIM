@@ -5,11 +5,12 @@ using UnityEngine.Events;
 
 public class TriggerAnimScript : MonoBehaviour
 {
-    public string trigger;
-    public float animLength;
-    public string detectTag; 
-    public Animator anim;
-    public UnityEvent useFunction;
+    [SerializeField] private string trigger;
+    [SerializeField] private float animLength;
+    [SerializeField] private string detectTag;
+
+    [SerializeField] private Animator anim;
+    [SerializeField] private UnityEvent useFunction;
     void Start()
     {
         if(anim == null)

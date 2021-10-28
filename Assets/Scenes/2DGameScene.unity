@@ -3820,7 +3820,6 @@ MonoBehaviour:
   isJumping: 0
   myRigidbody: {fileID: 0}
   anim: {fileID: 0}
-  wings: 0
 --- !u!4 &290567876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1614287541050408527, guid: aad3d8f132ca75e4fa0b8e598cb45178, type: 3}
@@ -6969,7 +6968,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.11950895}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6980,7 +6979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.55, y: 2}
+  m_Size: {x: 1.55, y: 1.760982}
   m_EdgeRadius: 0
 --- !u!95 &667294693 stripped
 Animator:
@@ -9611,6 +9610,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1670612009}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Find
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1144894917
 GameObject:
   m_ObjectHideFlags: 0
@@ -9960,7 +9971,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
 --- !u!114 &1670612011
 MonoBehaviour:
@@ -10122,7 +10133,7 @@ MonoBehaviour:
   absoluteTop: 5
   absoluteBottom: -5
   collideTiles: {fileID: 421809886}
-  nextScene: 3DGameScene
+  nextScene: MainMenu
 --- !u!1 &2042446979
 GameObject:
   m_ObjectHideFlags: 0

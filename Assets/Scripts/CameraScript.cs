@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public Transform player;
+    [SerializeField] private Transform player;
 
     public float smoothTime = 0.6f;
     private float xVelocity = 0.0f;
 
     void Start()
     {
+        player = GeneralScript.Player.transform;
         transform.position = new Vector3(player.transform.position.x, 0, transform.position.z);
     }
 
