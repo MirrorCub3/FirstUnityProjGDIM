@@ -10,7 +10,6 @@ public class TriggerAnimScript : MonoBehaviour
     public string detectTag; 
     public Animator anim;
     public UnityEvent useFunction;
-
     void Start()
     {
         if(anim == null)
