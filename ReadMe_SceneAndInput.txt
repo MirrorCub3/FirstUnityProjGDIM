@@ -14,4 +14,4 @@ In the 3DGameScene, players can use WASD or arrow keys to move around rhe enclos
 the player's body color which can be used to change the color of the nearby towers by bumping into them. Players can return to MainMenu
 using the lower right button. This is another example of onClick() events and mouse interaction as well as keyboard inputs. 
 
-At anytime, Esc can be clicked to return to MainMenu.
+At anytime, Esc can be clicked to return to MainMenu. It is ideal to have the camera ratio set to 16:9.
